@@ -79,8 +79,7 @@ var clearInputs = function() {
 
 var onSubmit = function(event) {
     event.preventDefault(); //I want to stop the default event for this form
-    console.log("Form submitted");
-
+    
     if (typeof rowNumber !== 'undefined') {
         subscribers.splice(rowNumber, 1, getNewSubscriber());
     } else {
